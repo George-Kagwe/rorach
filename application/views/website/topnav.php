@@ -4,7 +4,7 @@
 
 
 </style>
-<header>
+<!--<header>
        <div class="container">
            <div class="row">
            <div class="col-md-2">
@@ -38,7 +38,7 @@
        </div>
 
 
-     </header>
+     </header>-->
 
 
 
@@ -53,8 +53,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="<?=site_url('welcome/index')?>">
-      Rorach Limited</a>
+      <a class="navbar-brand" href="<?=site_url('welcome/index')?>"><img  class="logo" src="<?php echo base_url().'images/logo33.png';?>" ></a>
     </div>
     
 

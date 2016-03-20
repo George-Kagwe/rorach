@@ -1,0 +1,53 @@
+nav{
+	height: 90px;
+	background-color: #2196F3;
+	
+}
+.right .hide-on-med-and-down{
+
+
+}
+.caption{
+  z-index:150;
+
+
+}
+
+
+img{
+  border-style: none;
+  vertical-align: top;
+  max-width: 100%;
+  height: auto;
+}
+
+#message{
+
+  background-color: white;
+ width: 50%;
+ font-size: 20px;
+ margin-bottom: 0px;
+}
+#bigmessage{
+  background-color: white;
+  color: #f44336;
+ width: 50%;
+ font-size: 20px;
+ margin-bottom: 0px;
+}
+@media only screen and (max-width: 330px)  {
+
+#message{
+
+  background-color: white;
+ width: 50%;
+ font-size: 15px;
+}
+#bigmessage{
+  background-color: white;
+  color: #f44336;
+ width: 50%;
+ font-size: 15px;
+}
+
+}

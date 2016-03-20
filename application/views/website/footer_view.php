@@ -35,8 +35,19 @@
 
     </footer>-->
     <div id="footer">
-      <div class="container">
-        <p class="muted credit">Example courtesy <a href="http://martinbean.co.uk">Martin Bean</a> and <a href="http://ryanfait.com/sticky-footer/">Ryan Fait</a>.</p>
+      <div class="container-fluid">
+          <div class="row">
+              <div class="col-sm-12">
+                <h1>Follow Us</h1>
+                     <i class="fa fa-facebook-square fa-5x"></i>
+                    <i class="fa fa-twitter-square fa-5x" ></i>
+                    <i class="fa fa-linkedin-square fa-5x"></i>
+                     <i class="fa fa-youtube-square fa-5x"></i>
+
+                     webemail
+              </div>
+            
+          </div>
       </div>
     </div>
     
