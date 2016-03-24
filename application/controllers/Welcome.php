@@ -38,7 +38,7 @@ $this->load->view('website/footer_view');
 		
 $this->load->view('website/header_view');
 $this->load->view('website/topnav');
-$this->load->view('website/gallery_view');
+$this->load->view('website/services_view');
 $this->load->view('website/footer_view');
 	}
 	public function rorach_contact(){
@@ -48,4 +48,13 @@ $this->load->view('website/topnav');
 $this->load->view('website/gallery_view');
 $this->load->view('website/footer_view');
 	}
+
+
+	public function rorach_login(){
+		$this->load->view('Backend/header_view');
+        $this->load->view('website/topnav');
+        $this->load->view('Backend/login_form');
+        //$this->load->view('website/footer_view');
+
+    }
 }

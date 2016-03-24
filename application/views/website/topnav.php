@@ -4,44 +4,6 @@
 
 
 </style>
-<!--<header>
-       <div class="container">
-           <div class="row">
-           <div class="col-md-2">
-             <img  class="logo" src="<?php echo base_url().'images/logo33.png';?>" ></a>
-           </div>
-           <div class="col-md-10">
-                        <h5 id="heading">Register for classes today</h5>
-                     <form id="book_classess" class="form-inline" role="form">
-                <div class="form-group">
-                  <label for="Name"> First Name</label>
-                  <input type="text" class="form-control" id="name">
-                </div>
-                <div class="form-group">
-                  <label for="Name"> Other Name</label>
-                  <input type="text" class="form-control" id="name">
-                </div>
-                <div class="form-group">
-                  <label for="phone">Phone</label>
-                  <input type="phone" class="form-control" id="phone">
-                </div>
-                
-                <button type="submit" class="btn btn-success">Register</button>
-            </form>
-           
-           </div>
-             
-
-           </div>
-         
-
-       </div>
-
-
-     </header>-->
-
-
-
 <nav id="navbar-black" class="navbar navbar-default " role="navigation">
 <!--<nav class="navbar  custom-navbar navbar-default ">-->
   <div class="container-fluid">
@@ -64,10 +26,10 @@
       <ul class="nav navbar-nav navbar-right">
         <li><a  href="<?=site_url('welcome/index')?>">Home</a></li>
         <li><a href="<?=site_url('welcome/rorach_about')?>">About Us</a></li>
-        <li><a href="#">Services</a></li>
+        <li><a href="<?=site_url('welcome/rorach_services')?>">Services</a></li>
         <li><a href="<?=site_url('welcome/rorach_gallery')?>">Gallery</a></li>
         <li><a href="#">Contact Us</a></li>
-        <li><a href="<?=site_url('person/index')?>">Login</a></li>
+        <li><a href="<?=site_url('welcome/rorach_login')?>">Login</a></li>
         <!--<li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
           <ul class="dropdown-menu">

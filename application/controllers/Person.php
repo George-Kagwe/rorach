@@ -13,7 +13,7 @@ class Person extends CI_Controller {
 	{
 		$this->load->helper('url');
 		$this->load->view('website/header_view');
-		$this->load->view('includes/innerbar');
+		$this->load->view('Backend/Top_nav');
 		$this->load->view('Backend/person_view');
 
 	}

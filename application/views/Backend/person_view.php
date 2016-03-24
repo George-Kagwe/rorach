@@ -326,13 +326,7 @@ function delete_person(id)
                                 <span class="help-block"></span>
                             </div>
                         </div>
-                        <!--<div class="form-group">
-                            <label class="control-label col-md-3">Address</label>
-                            <div class="col-md-9">
-                                <input name="lastName" placeholder="Last Name" class="form-control" type="text">
-                                <span class="help-block"></span>
-                            </div>
-                        </div>-->
+                        
                         <div class="form-group">
                             <label class="control-label col-md-3">LMP</label>
                             <div class="col-md-9">

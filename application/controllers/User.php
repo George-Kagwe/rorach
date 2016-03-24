@@ -2,11 +2,11 @@
 
 class User extends CI_Controller{
 
-	public function __construct(){
-		parent:: __construct();
-		$this->load->model('user_model');
-    $this->load->helper('crud');
-	}
+  public function __construct(){
+    parent:: __construct();
+    $this->load->model('user_model');
+    
+  }
 
 
   public function printa(){
@@ -30,7 +30,7 @@ class User extends CI_Controller{
      foreach ($classlist as $student):
       $data.='<tr>
         <td> '. $student['id'].'</td>
-        <td>'. $student['name'].'</td>
+        <td>'. $student['lname'].'</td>
         <td>'.'</td>
         <td>'.'</td>
         <td>'.'</td>
@@ -203,27 +203,12 @@ class User extends CI_Controller{
  
     $this->load->view('class_list',$data);
    $this->load->view('includes/footer_view');
-	}
+  }
  
 
   public function register(){
      
-		 /*$this->output->set_content_type('application_json');
-
-	   $this->form_validation->set_rules('admission','Admission','required|is_numeric|is_unique[students.studentid]');
-	   $this->form_validation->set_rules('name','Name','required');
-	   $this->form_validation->set_rules('dayorborder','Admission');
-	   $this->form_validation->set_rules('class','Admission');
-	   $this->form_validation->set_rules('parentname','Admission');
-     $this->form_validation->set_message('required','is required');
-     $this->form_validation->set_message('is_unique','Already exists');
-     if($this->form_validation->run()==false){
-      
-      $this->output->set_output(json_encode(['result'=>0,'data'=>validation_errors()]));
-       
-      //die();
-     }*/
-
+  
        $mothername      =$this->input->post('mothername');
        $phone           =$this->input->post('phone');
        $dateofbirth     =$this->input->post('dateofbirth');
@@ -371,7 +356,7 @@ class User extends CI_Controller{
      //insert the data into the patients  table
 
       $this->user_model->insert([
-      'name'              =>$mothername,
+      'lname'              =>$mothername,
       'dob'               =>$dateofbirth,
       'phone'             =>$good,
       'address'           =>$address,
@@ -386,43 +371,45 @@ class User extends CI_Controller{
       ]);
       // end of inserting into the patients table
 
+       /*echo '<script> type="text/javascript">
+      alertify.alert("saved");
+      </script>';*/
 
-      redirect('welcome/register');
+     echo "<script>$(function(){alertify.alert('Saved!');})</script>";
+
+
+      redirect('backend/register_clients');
      
 
 
-        $this->load->view('includes/header_view');
-        $this->load->view('includes/top_nav');
-        $this->load->view('patient_registration');
-        $this->load->view('includes/footer_view');
 
     
  
   }
 
-	public function login(){
-		$username=$this->input->post('username');
-		$password=$this->input->post('password');
-		//$hashed=hash('sha256',$password.SALT);
-		$result=$this->user_model->get([
+  public function login(){
+    $username=$this->input->post('username');
+    $password=$this->input->post('password');
+    //$hashed=hash('sha256',$password.SALT);
+    $result=$this->user_model->get([
 
          'username'=>$username,
          'password'=>$password
 
-		]);
-		
+    ]);
+    
         $this->output->set_content_type('application_json');
        
         if($result){
          $this->session->set_userdata(['id'=>$result[0]['id']]);
          $this->output->set_output(json_encode(['result'=>1]));
-        	return false;
+          return false;
        }
        $this->output->set_output(json_encode(['result'=>0]));
      
 
-	}
-	public function insert(){
+  }
+  public function insert(){
     
   
 $date1=date_create("2013-03-15");
@@ -431,9 +418,9 @@ $diff=date_diff($date1,$date2);
 echo $diff->format("%R%a days");
 //echo $diff;
 
-		
-	}
-	public function update(){
+    
+  }
+  public function update(){
          $id=$this->uri->segment(3);
      
         $query = $this->db->get_where('patients', array('id' => $id));
@@ -471,10 +458,38 @@ echo $diff->format("%R%a days");
    // $this->load->view('includes/footer_view');
     ////////////////////////////////////////////////////
 
-		
-	}
-	public function delete(){
-  
+    
+  }
+   public function register_users(){
 
-	}
+
+     //validate the date being  entered by the user
+
+    
+
+    //save user data
+       $username      =$this->input->post('email');
+       
+       
+       $password    =$this->input->post('password');
+       $Confirmpassword    =$this->input->post('Confirmpassword');
+         
+         $type='admin';
+        
+       
+     
+    // save the data to the users table
+  $users_data=array(
+      'type'             =>$type,
+      'user_name'        =>$username,     
+      'user_password'    =>md5($password)
+      );
+
+  var_dump($users_data);
+      
+      $this->user_model->insert_users($users_data);
+      
+
+  }
+  
 }

@@ -99,6 +99,14 @@ public function get($user_id=null){
 
 		
 	}
+
+	public function insert_users($data){
+
+		$this->db->insert('users',$data);
+		return $this->db->insert_id();
+
+		
+	}
 	function update($data){
 
 

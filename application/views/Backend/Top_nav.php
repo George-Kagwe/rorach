@@ -19,8 +19,8 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="<?=site_url('welcome/index')?>">
-      Rorach Limited</a>
+      <!--<a class="navbar-brand" href="<?=site_url('welcome/index')?>"><img  class="logo" src="<?php echo base_url().'images/logo33.png';?>" ></a>-->
+      <a  class="navbar-brand" href="<?=site_url('welcome/index')?>">Go to website</a>
     </div>
     
 
@@ -29,22 +29,14 @@
      
       
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Register</a></li>
-        <li><a href="#">Services</a></li>
-        <li><a href="#">Gallery</a></li>
-        <li><a href="#">Contact Us</a></li>
-        <li><a href="<?=site_url('person/index')?>">Login</a></li>
-        <!--<li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="#">Action</a></li>
-            <li><a href="#">Another action</a></li>
-            <li><a href="#">Something else here</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="#">Separated link</a></li>
-          </ul>
-        </li>-->
+      <li><a href="<?=site_url('person/index')?>">Charts</a></li>
+        <li><a href="<?=site_url('person/index')?>">Dashboard</a></li>
+        <li><a href="<?=site_url('backend/register_clients')?>">Register new clients</a></li>
+        <li><a href="<?=site_url('backend/sms')?>">Send SMS</a></li>
+         <li><a href="<?=site_url('backend/feedback')?>">Feedback</a></li>
+         <li><a href="<?=site_url('backend/change_password')?>">change password</a></li>
+         <li><a href="<?=site_url('User_authentication/logout')?>">Logout</a></li>
+        
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
