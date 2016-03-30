@@ -54,7 +54,7 @@ $this->load->view('website/footer_view');
 		$this->load->view('Backend/header_view');
         $this->load->view('website/topnav');
         $this->load->view('Backend/login_form');
-        //$this->load->view('website/footer_view');
+       // $this->load->view('includes/footer_view');
 
     }
 }

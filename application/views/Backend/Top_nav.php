@@ -35,7 +35,7 @@
         <li><a href="<?=site_url('backend/sms')?>">Send SMS</a></li>
          <li><a href="<?=site_url('backend/feedback')?>">Feedback</a></li>
          <li><a href="<?=site_url('backend/change_password')?>">change password</a></li>
-         <li><a href="<?=site_url('User_authentication/logout')?>">Logout</a></li>
+         <li><a href="<?=site_url('User_Authentication/logout')?>">Logout</a></li>
         
       </ul>
     </div><!-- /.navbar-collapse -->

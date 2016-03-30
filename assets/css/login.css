@@ -1,16 +1,49 @@
 
+#register1
+{
+text-align: center;
+padding-left: 0px;
+ margin-left: 10%;
+ 
 
-#form .fieldgroup #label.error.error {
-    color: #FB3A3A;
-    display: inline-block;
-    margin: 4px 0 5px 125px;
-    padding: 0;
-    text-align: left;
-    width: 220px;
+}
+
+#registration{
+  padding-left: 3px;
+
+ margin-left: 10%;
+   background-color: #607D8B;
+   color: #ffffff;
+   width: relative;
+   margin-right: 10%;
+   border-radius: 15px 15px 15px 15px;
+   margin-bottom: 5%;
+}
+#registration1{
+ padding-left: -2em;
+
+ margin-left: 10%;
+   background-color: #607D8B;
+   color: #ffffff;
+   width: relative;
+   margin-right: 10%;
+   border-radius: 15px 15px 15px 15px;
+   margin-bottom: 5%;
+}
+#submitbutton{
+  width: 100%;
+background-color:#FFBC00;
+color: white;
+border: 2px solid #FFCB00;
+padding: 10px;
+font-size:20px;
+cursor:pointer;
+border-radius: 5px;
+margin-bottom: 15px;
 }
 body{
-  margin-left: 10% !important;
-  margin-right: 10% !important;
+  margin-left: 5% !important;
+  margin-right: 5% !important;
   background:#EEEEEE !important; 
 
 }
